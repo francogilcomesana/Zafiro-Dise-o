@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../productos.html">Productos</a></li>
+            <li><a href="../quienes-somos.html">Quienes Somos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="../ayuda.html">Ayuda</a></li>
+        </ul>
+
+
+    </nav>
+    <div>
+        <h2>Contactanos</h2>
+
+     <form>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="Nombre">
+        <br>
+        <label for="email">Correo Electronico</label>
+        <input type="text" id="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>Producto a comprar</legend>
+            <select name="Producto" id="Producto">
+                <option value="Riñonera">Riñonera</option>
+                <option value="Cartera">Cartera</option>
+                <option value="Billetera">Billetera</option>
+            </select>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" name="cantidad" id="cantidad">
+            <br>
+            <p>Color</p>
+            <label for="color">Blanco</label>
+            <input type="radio" name="color" id="color">
+            <br>
+            <label for="color">Rojo</label>
+            <input type="radio" name="color" id="color">
+            <br>
+            <label for="color">Verde</label>
+            <input type="radio" name="color" id="color">
+            <br>
+            <input type="submit" value="Comprar">
+            <br>
+            <input type="reset" value="Limpiar todo">
+            
+        </fieldset>
+     </form>   
+        
+    </div>
+    <footer>
+        <li>
+            <p>Todos los derechos reservados</p>
+        </li>
+    </footer>
+</body>
+</html>
