@@ -129,6 +129,11 @@ h2 {
     font-size: 15px;
 
 }
+.Subtitulo{
+    text-align: center;
+    margin: 10px;
+    
+}
 
   @media screen and (max-width:480px){
    
@@ -138,16 +143,13 @@ h2 {
         grid-gap: 30px;
         padding: 35px 0px;
     }
-    modal.dialog{
-        width: 82px;
-
-    }
-    .d-lg-none{
-
-    }
+    fieldset{
+        min-width: 0;
+        padding: 10%;
+        margin: 0;
+        border: 0;
+     }   
    
-    
-    
    
   }
     
@@ -155,5 +157,6 @@ h2 {
   /*** Fondo pagina contacto ***/
 
   .fondoContacto {
-    background-color: lightgrey;
+    background-color: lightslategray;
   }
+  
