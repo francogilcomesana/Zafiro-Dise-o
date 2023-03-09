@@ -9,146 +9,6 @@ body {
     font-family: 'Urbanist', sans-serif;
     overflow-x: hidden;
 }
-a{
-    text-decoration: none;
-    color: currentColor;
-}
-a:hover{
-    color: currentColor;
-}
-header{
-    width: 100vw;
-    height: 100px;
-    background-color: #fff;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
-}
-header .container-fluid{
-    width: 100%;
-    padding: 0 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-header .navb-logo img{
-    width: 140px;
-    height: 24px;
-}
-header .navb-items{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 3px;
-}
-header .item{
-    text-align: center;
-    margin-inline: 5%;
-    font-size: 20px;
-    letter-spacing: 3px;
-    color: #102447;
-    padding: 5px 0;
-    transition: all .1s ease;
-    border-bottom: 0px solid #64d6f4;
-    border-top: 0px solid #64d6f4;
-    cursor: cell;
-}
-header .item:hover{
-    border-bottom: 3px solid #64d6f4;
-    border-top: 3px solid #64d6f4;
-}
-header .item-button a{
-    background-color: #274d8a;
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    transition: all .1s ease;
-}
-header .item-button a:hover{
-    background-color: #64d6f4;
-
-
-}
-.modal-dialog{
-    margin: 0;
-    width: 430px;
-
-}
-@media(max-width:450px){
-    modal.dialog{
-        width: 82px;
-
-    }
-}
-.modal-content{
-    border-radius:0;
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: wheat;
-}
-.modal-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 88%;
-    margin: 0 auto;
-    padding-bottom: 16px;
-    border-bottom: 2px solid #fefefe;
-}
-.modal-header img{
-    width: 140px;
-    width: 66px;
-    margin-top: 17.5px;
-}
-.modal-header .btn-close{
-    background: transparent;
-    opacity: 1;
-
-}
-.modal-header i{
-    color: #fefefe;
-    font-size: 30px;
-
-}
-.modal-body{
-    width: 88%;
-    margin: 0 auto;
-    padding: 75px 0 0 0;
-    flex: unset;
-}
-.modal-body .modal-line{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 7px 0;
-    margin-bottom: 50px;
-    cursor: pointer;
-    transition: all .5s ease;
-    color: #102447;
-    border-bottom: 1px solid #102447;
-}
-.modal-body .modal-line:hover{
-    color: rgb(71, 10, 90);
-    border-bottom: 1px solid rgb(71, 10, 90);
-}
-.modal-line a{
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: 2.5px;
-    color: #102447;
-}
-.modal-line i{
-    color: currentColor;
-    font-size: 30px;
-    width: 35px;
-    margin-right: 35px;
-    padding: 0 0 3px 3px;
-
-}
 
 
 h1 {
@@ -164,39 +24,6 @@ h1 {
     
 }
 
-
-button{
-    display: flex;
-    flex-direction: column;
-    width: 3rem;
-    height: 3rem;
-    border: 0;
-    background: transparent;
-    gap: .65rem;
-}
-button > div{
-    background: black;
-    height: 2px;
-    width: 100%;
-    border-radius: 5px;
-    transition: all .5s;
-    transform-origin: left;
-
-}
-button:hover div:first-child{
-    transform: rotate(45deg);
-}
-button:hover div:nth-child(2){
-    opacity: 0;
-
-}
-button:hover div:last-child{
-    transform: rotate(-45deg);
-}
-
-
-
-
 img{
     width: 200px;
 }
@@ -205,14 +32,15 @@ img{
     border: 1px solid black;
     width: 400px;
     height: auto;
+    flex-direction: row;
 }
 .cardLeft {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 30px 20px;
-    width: 30%;
+    padding: 44px 92px;
+    width: 40%;
    
 }
 .cardRight {
@@ -220,7 +48,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     
 }
 .cardleft p {
@@ -241,32 +69,11 @@ h2 {
     align-items: center;
 }
 
-
-section{
-    display: flex;
-    width: 1266px;
-    height: 280px;
-}
-section img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-section img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
-
- 
     
 /*** Footer ***/
 .pie-pagina{
     width: 100%;
-    background-color: wheat;
+    background-color: lightgrey;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -330,6 +137,13 @@ section img:hover{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+    modal.dialog{
+        width: 82px;
+
+    }
+    .d-lg-none{
+
     }
    
     

@@ -23,86 +23,58 @@
 
 
     <header>
-        <div class="containerfluid">
-            <div class="navb-logo">
-                <img src="./images/ZAFIROnuevo.png" alt="">
-            </div>
-            <div class="navb-items">
-                <div class="item">
-                    <a href="#">Home</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/productos.html">Productos</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/quienes-somos.html">Quienes Somos</a>
-                </div>
-                <div class="item">
-                    <a href="./pages/ayuda.html">Ayuda</a>
-                </div>
-                <div class="item-button">
-                    <a href="./pages/contacto.html" type="button">Contactanos</a>
-                </div>
-            </div>
-
-            <!-- Button trigger modal -->
-            <div class="mobile-toggler d-lg-none">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <img src="./images/ZAFIROnuevo.png" alt="">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-line">
-                                <i class="fa-solid fa-house"></i> <a href="#">Home</a>
-                            </div>
-                            <div class="modal-line">
-                                <i class="fa-solid fa-cart-shopping"></i> <a href="./pages/productos.html">Productos</a>
-                            </div>
-                            <div class="modal-line">
-                                <i class="fa-solid fa-info"></i> <a href="./pages/quienes-somos.html">Quienes Somos</a>
-                            </div>
-                            <div class="modal-line">
-                                <i class="fa-solid fa-message"></i> <a href="./pages/contacto.html">Contacto</a>
-                            </div>
-                            <div class="modal-line">
-                                <i class="fa-brands fa-hire-a-helper"></i> <a href="./pages/ayuda.html">Ayuda</a>
-                            </div>
-                            
-                            
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/ZAFIROnuevo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/quienes-somos.html">Quienes Somos</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
             </div>
-
-        </div>
+        </nav>
     </header>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/15.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/10.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/11.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
     <main>
 
-        <section>
-            <img src="./images/1.jpeg">
-            <img src="./images/15.jpeg">
-            <img src="./images/12.jpeg">
-            <img src="./images/11.jpeg">
-            <img src="./images/10.jpeg">
-        </section>
-
         <div>
-            
+
             <div class="cardsContainer">
                 <div class="card">
                     <div class="cardLeft">
@@ -117,56 +89,56 @@
                 </div>
                 <div class="card">
                     <div class="cardLeft">
-                        <h3>Cartera XXX</h3>
+                        <h3>Cartera Negra Cadenas</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <span>$2500</span>
                     </div>
                     <div class="cardRight">
-                        <img src="./images/16.jpeg" alt="">
+                        <img src="./images/7.jpeg" alt="">
                         <input type="submit" value="Comprar">
                     </div>
                 </div>
                 <div class="card">
                     <div class="cardLeft">
-                        <h3>Cartera XXX</h3>
+                        <h3>Cartera Leopardo</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <span>$2500</span>
                     </div>
                     <div class="cardRight">
-                        <img src="./images/16.jpeg" alt="">
+                        <img src="./images/8.jpeg" alt="">
                         <input type="submit" value="Comprar">
                     </div>
                 </div>
                 <div class="card">
                     <div class="cardLeft">
-                        <h3>Cartera XXX</h3>
+                        <h3>Mochi Cartera</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <span>$2500</span>
                     </div>
                     <div class="cardRight">
-                        <img src="./images/16.jpeg" alt="">
+                        <img src="./images/12.jpeg" alt="">
                         <input type="submit" value="Comprar">
                     </div>
                 </div>
                 <div class="card">
                     <div class="cardLeft">
-                        <h3>Cartera XXX</h3>
+                        <h3>Riñonera Negra Cadenas</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <span>$2500</span>
                     </div>
                     <div class="cardRight">
-                        <img src="./images/16.jpeg" alt="">
+                        <img src="./images/10.jpeg" alt="">
                         <input type="submit" value="Comprar">
                     </div>
                 </div>
                 <div class="card">
                     <div class="cardLeft">
-                        <h3>Cartera XXX</h3>
+                        <h3>Charol Negra</h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <span>$2500</span>
                     </div>
                     <div class="cardRight">
-                        <img src="./images/16.jpeg" alt="">
+                        <img src="./images/11.jpeg" alt="">
                         <input type="submit" value="Comprar">
                     </div>
                 </div>
