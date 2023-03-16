@@ -13,12 +13,14 @@ body {
 
 h1 {
     
-    font-family: 'Urbanist';
+    font-family: 'Urbanist' sans-serif;
     color: transparent;
-    font-size: 148px;
+    font-size: 40px;
     font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
     letter-spacing: -0.015em;
-    background-image: linear-gradient(180deg, #166f9b, hsl(266, 80%, 54%));
+    background-image: linear-gradient(180deg, #2d2f31, hsl(266, 37%, 72%));
     background-clip: text;
     -webkit-background-clip: text;
     
@@ -26,6 +28,7 @@ h1 {
 
 img{
     width: 200px;
+    
 }
 .card {
     display: flex;
@@ -39,8 +42,8 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 44px 92px;
-    width: 40%;
+    
+    width: 30%;
    
 }
 .cardRight {
@@ -48,7 +51,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 70%;
     
 }
 .cardleft p {
@@ -81,7 +84,7 @@ h2 {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 10px;
     padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .box figure{
@@ -135,23 +138,28 @@ h2 {
     
 }
 
-  @media screen and (max-width:480px){
+ 
    
+@media screen and (max-width:768px){
+     .pie-pagina .grupo-1{
+            width: 90%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            place-items: center;
+            padding: 35px 0px;
+ }  
+@media screen and (max-width:480px){
+        
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
-    }
-    fieldset{
-        min-width: 0;
-        padding: 10%;
-        margin: 0;
-        border: 0;
-     }   
-   
-   
-  }
+    }  
+ }
+ 
+    
+ }
     
 
   /*** Fondo pagina contacto ***/
