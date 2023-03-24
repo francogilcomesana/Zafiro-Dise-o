@@ -1,274 +1,281 @@
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  border: 1px solid black;
+  width: 400px;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 200px;
+}
+
+/*** Footer ***/
+.pie-pagina {
+  width: 100%;
+  background-color: lightgrey;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 45px 0px;
+}
+.pie-pagina .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: black;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: wheat;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    place-items: center;
+    padding: 35px 0px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+/** Otros estilos **/
 * {
-    margin: 0px;
-    padding: 0px;
-    
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: lightgray;
-    font-family: 'Urbanist', sans-serif;
-    overflow-x: hidden;
+  background-color: lightgray;
+  font-family: "Urbanist", sans-serif;
+  overflow-x: hidden;
 }
-
 
 .titulo {
-    font-family: 'Urbanist' sans-serif;
-    color: transparent;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 10px;
-    letter-spacing: -0.015em;
-    background-image: linear-gradient(180deg, #2d2f31, hsl(266, 37%, 72%));
-    background-clip: text;
-    -webkit-background-clip: text;
+  font-family: "Urbanist" sans-serif;
+  color: transparent;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: -0.015em;
+  background-image: linear-gradient(180deg, #2d2f31, hsl(266, 37%, 72%));
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-img{
-    width: 200px;
-}
-.card {
-    display: flex;
-    border: 1px solid black;
-    width: 400px;
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.Subtitulo {
+  text-align: center;
+  margin: 10px;
 }
 
-.cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-/*** Footer ***/
-.pie-pagina{
-    width: 100%;
-    background-color: lightgrey;
-}
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding: 45px 0px;
-}
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-    width: 250px;
-
-}
-.pie-pagina .grupo-1 .box h2{
-    margin-bottom: 25px;
-    font-size: 20px;
-
-}
-.pie-pagina .grupo-1 .box p{
-    color: black;
-    margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: wheat;
-    margin-right: 10px;
-    background-color: #0d2033;
-    text-align: center;
-    transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
-}
-.pie-pagina .grupo-2{
-    background-color: #0a1a2a;
-    padding: 15px 10px;
-    text-align: center;
-    color: white;
-}
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-
-}
-.Subtitulo{
-    text-align: center;
-    margin: 10px;
-    
+/** HEADER **/
+.navbar-brand img {
+  width: 150px;
+  height: 100px;
 }
 
- 
-   
-@media screen and (max-width:768px){
-     .pie-pagina .grupo-1{
-            width: 90%;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 30px;
-            place-items: center;
-            padding: 35px 0px;
- }  
-@media screen and (max-width:480px){
-        
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }  
- }
- 
-    
- }
-    
+/*** ESTILOS PAGINA PRODUCTOS ***/
+.tarjetas {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+}
 
-  /*** Fondo pagina contacto ***/
+.cardproduct {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
 
-  .fondoContacto {
-    background-color: lightgray;
-  }
-  /*** Pagina Productos ***/
+.cardproduct:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
 
+.cardproduct img {
+  width: 100%;
+  height: 210px;
+}
 
-  .grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    background-color: #03afff;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-  
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .grid-item:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 20px;
-    padding: 20px;
-    grid-auto-flow: dense;
-  }
-  
-  @media (min-width: 600px) {
-    .wide {
-      grid-column: span 2;
-    }
-  
-    .tall {
-      grid-row: span 2;
-    }
-  }
+.cardproduct .contenido {
+  line-height: 1.5;
+  color: #6a6a6a;
+  justify-content: center;
+}
 
-  /** ESTILOS PAGINA PROMOCIONES **/
-  .containerpromo{
-    width: 100%;
-    height: 100vh;
+.cardproduct .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.cardproduct .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(72, 72, 174);
+  border: 1px solid rgb(72, 72, 174);
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.cardproduct .contenido a:hover {
+  background-color: wheat;
+  color: #fff;
+}
+
+/*** Pagina Productos ***/
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-container.grid-item .wide {
+  background-image: url(https://tinypic.host/images/2023/03/15/1ea8557767c967c95.jpg);
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
   }
-  .container h2{
-    align-items: center;
-    color: black;
-    border: 2px solid black;
-    
+  .tall {
+    grid-row: span 2;
   }
-  .banner{
-    width: 100%;
-    height: 65vh;
-    background-image: url(https://tinypic.host/images/2023/03/20/pngtree-exquisite-handbags-promotion-season-simple-yellow-banner-picture-image_1023006.png);
-    background-size: cover;
-    background-position: 69%;
-    border-radius: 100px;
-    position: fixed;
-    margin-top: 5px;
-  }
-  .banner-text{
-    padding-top: 100px;
-    margin-left: 50px;
-  }
-  .banner-text h2{
-    letter-spacing: 10px;
-    font-weight: bold;
-    font-size: 25px;
-  }
-  .banner-text h1{
-    margin-left: 5px;
-    font-size: 100px;
-  }
-  #btn{
-    width: 139px;
-    height: 65px;
-    font-weight: bold;
-    background-color: black;
-    letter-spacing: 3px;
-    margin-left: 50px;
-    color: wheat;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-  }
-  /*** ESTILOS PAGINA PRODUCTOS ***/
-  .tarjetas{
-    width: 100%;
-    display: flex;
-    max-width: 1100px;
-  }
-  .cardproduct{
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default; 
-    transition: all 400ms ease;
-  }
-  .cardproduct:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
-  }
-  .cardproduct img{
-    width: 100%;
-    height: 210px;
-  }
-  .cardproduct .contenido{
-    line-height: 1.5;
-    color: #6a6a6a;
-    justify-content: center;
-  }
-  .cardproduct .contenido h3{
-    font-weight: 400;
-    margin-bottom: 15px;
-    
-  }
-  .cardproduct .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    justify-content: center;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(72, 72, 174);
-    border: 1px solid rgb(72, 72, 174);
-    border-radius: 4px;
-    transition: all 400ms ease;
-  }
-  .cardproduct .contenido a:hover{
-    background-color: wheat;
-    color: #fff;
-  }
+}
+/** ESTILOS PAGINA PROMOCIONES **/
+.containerpromo {
+  width: 100%;
+  height: 100vh;
+}
+
+.container h2 {
+  align-items: center;
+  color: black;
+  border: 2px solid black;
+}
+
+.banner {
+  width: 100%;
+  height: 65vh;
+  background-image: url(https://tinypic.host/images/2023/03/20/pngtree-exquisite-handbags-promotion-season-simple-yellow-banner-picture-image_1023006.png);
+  background-size: cover;
+  background-position: 69%;
+  border-radius: 100px;
+  margin-top: 5px;
+}
+
+.banner-text {
+  padding-top: 100px;
+  margin-left: 50px;
+}
+
+.banner-text h2 {
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.banner-text h1 {
+  margin-left: 5px;
+  font-size: 100px;
+}
+
+#btn {
+  width: 139px;
+  height: 65px;
+  font-weight: bold;
+  background-color: black;
+  letter-spacing: 3px;
+  margin-left: 50px;
+  color: wheat;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/*** Fondo pagina contacto ***/
+.fondoContacto {
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=style.css.map */

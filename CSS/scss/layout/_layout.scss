@@ -1,0 +1,122 @@
+/*** Footer ***/
+.pie-pagina {
+    width: 100%;
+    background-color: lightgrey;
+  
+    .grupo-1 {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      padding: 45px 0px;
+    }
+  
+    .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    figure img {
+      width: 250px;
+    }
+  
+    .grupo-1 .box h2 {
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+  
+    .grupo-1 .box p {
+      color: black;
+      margin-bottom: 10px;
+    }
+  
+    .grupo-1 .red-social a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: wheat;
+      margin-right: 10px;
+      background-color: #0d2033;
+      text-align: center;
+      transition: all 300ms ease;
+        &:hover{
+          color: aqua;
+        }
+    }
+    .grupo-2 {
+      background-color: #0a1a2a;
+      padding: 15px 10px;
+      text-align: center;
+      color: white;
+    }
+  
+    .grupo-2 small {
+      font-size: 15px;
+  
+    }
+  }
+  @media screen and (max-width:768px) {
+    .pie-pagina .grupo-1 {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+      place-items: center;
+      padding: 35px 0px;
+    }
+  
+    @media screen and (max-width:480px) {
+  
+      .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+      }
+    }
+}
+  /** Otros estilos **/
+  * {
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  body {
+    background-color: lightgray;
+    font-family: 'Urbanist', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  
+  .titulo {
+    font-family: 'Urbanist' sans-serif;
+    color: transparent;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: -0.015em;
+    background-image: linear-gradient(180deg, #2d2f31, hsl(266, 37%, 72%));
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .Subtitulo {
+    text-align: center;
+    margin: 10px;
+  
+  }
+  /** HEADER **/
+ .navbar-brand{
+    img{
+    width: 150px;
+    height: 100px;
+    }
+}   
+    
