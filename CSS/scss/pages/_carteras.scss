@@ -1,4 +1,26 @@
-/*** ESTILOS PAGINA PRODUCTOS ***/
+/*** ESTILOS PAGINA CARTERAS ***/
+#bienvenidaCarteras{
+  color: white;
+  padding: 300px 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.846),rgba(0, 0, 0, 0.853)),url(https://tinypic.host/images/2023/03/29/Cartera-Tote_04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  margin-top: -80px;
+  h1{
+    text-align: center;
+    font-size: 60px;
+    
+  }
+  h2{
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 25px;
+      text-align: center;
+      max-width: 70%;
+  }
+}
 .tarjetas{
   width: 100%;
   display: flex;
@@ -52,7 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  flex-wrap: wrap;
   background-color: #03afff;
   border-radius: 4px;
   transition: transform 0.3s ease-in-out;
@@ -60,15 +82,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.grid-container.grid-item .wide{
-  background-image: url(https://tinypic.host/images/2023/03/15/1ea8557767c967c95.jpg);
+.grid-item wide{
+  background-image: url(https://tinypic.host/images/2023/03/28/115a2c23350690abd.jpg);
 }
-
 .grid-item:hover {
   filter: opacity(0.9);
   transform: scale(1.04);
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

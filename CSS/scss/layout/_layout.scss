@@ -79,6 +79,14 @@
         grid-gap: 30px;
         padding: 35px 0px;
       }
+      .contenedorcards{
+        grid-template-areas:
+        "card1 card1"
+        "card2 card2"
+        "card3 card3";
+        padding: 20px;
+
+      }
     }
 }
   /** Otros estilos **/
@@ -91,8 +99,30 @@
     background-color: lightgray;
     font-family: 'Urbanist', sans-serif;
     overflow-x: hidden;
+    margin: 0px;
   }
-  
+  #bienvenida{
+      color: white;
+      padding: 300px 0;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.846),rgba(0, 0, 0, 0.853)),url(https://tinypic.host/images/2023/03/29/moda.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      margin-top: -80px;
+      h1{
+        text-align: center;
+        font-size: 60px;
+        
+      }
+      h2{
+          padding-left: 10%;
+          padding-right: 10%;
+          font-size: 25px;
+          text-align: center;
+          max-width: 70%;
+      }
+  }
   
   .titulo {
     font-family: 'Urbanist' sans-serif;
@@ -102,7 +132,7 @@
     text-align: center;
     margin-top: 10px;
     letter-spacing: -0.015em;
-    background-image: linear-gradient(180deg, #2d2f31, hsl(266, 37%, 72%));
+    background-image: linear-gradient(180deg, #283746, hsl(266, 50%, 34%));
     background-clip: text;
     -webkit-background-clip: text;
   }
@@ -119,4 +149,3 @@
     height: 100px;
     }
 }   
-    

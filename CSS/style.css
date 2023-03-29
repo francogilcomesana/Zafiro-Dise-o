@@ -15,6 +15,63 @@
 }
 .card img {
   width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.contenedorcards {
+  color: black;
+  background-color: rgb(212, 212, 212);
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "card1 card2 card3";
+}
+
+.card1 {
+  grid-area: card1;
+  background-image: url(https://tinypic.host/images/2023/03/29/modelo1.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card2 {
+  grid-area: card2;
+  background-image: url(https://tinypic.host/images/2023/03/29/modelo5.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card3 {
+  grid-area: card3;
+  background-image: url(https://tinypic.host/images/2023/03/29/modelo4.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card3 p {
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
 }
 
 /*** Footer ***/
@@ -90,6 +147,10 @@
     grid-gap: 30px;
     padding: 35px 0px;
   }
+  .contenedorcards {
+    grid-template-areas: "card1 card1" "card2 card2" "card3 card3";
+    padding: 20px;
+  }
 }
 /** Otros estilos **/
 * {
@@ -101,6 +162,29 @@ body {
   background-color: lightgray;
   font-family: "Urbanist", sans-serif;
   overflow-x: hidden;
+  margin: 0px;
+}
+
+#bienvenida {
+  color: white;
+  padding: 300px 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.853)), url(https://tinypic.host/images/2023/03/29/moda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  margin-top: -80px;
+}
+#bienvenida h1 {
+  text-align: center;
+  font-size: 60px;
+}
+#bienvenida h2 {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 25px;
+  text-align: center;
+  max-width: 70%;
 }
 
 .titulo {
@@ -111,7 +195,7 @@ body {
   text-align: center;
   margin-top: 10px;
   letter-spacing: -0.015em;
-  background-image: linear-gradient(180deg, #2d2f31, hsl(266, 37%, 72%));
+  background-image: linear-gradient(180deg, #283746, hsl(266, 50%, 34%));
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -127,7 +211,29 @@ body {
   height: 100px;
 }
 
-/*** ESTILOS PAGINA PRODUCTOS ***/
+/*** ESTILOS PAGINA CARTERAS ***/
+#bienvenidaCarteras {
+  color: white;
+  padding: 300px 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.853)), url(https://tinypic.host/images/2023/03/29/Cartera-Tote_04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  margin-top: -80px;
+}
+#bienvenidaCarteras h1 {
+  text-align: center;
+  font-size: 60px;
+}
+#bienvenidaCarteras h2 {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 25px;
+  text-align: center;
+  max-width: 70%;
+}
+
 .tarjetas {
   width: 100%;
   display: flex;
@@ -188,6 +294,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #03afff;
   border-radius: 4px;
   transition: transform 0.3s ease-in-out;
@@ -196,8 +303,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.grid-container.grid-item .wide {
-  background-image: url(https://tinypic.host/images/2023/03/15/1ea8557767c967c95.jpg);
+.grid-item wide {
+  background-image: url(https://tinypic.host/images/2023/03/28/115a2c23350690abd.jpg);
 }
 
 .grid-item:hover {
@@ -237,11 +344,12 @@ body {
 .banner {
   width: 100%;
   height: 65vh;
-  background-image: url(https://tinypic.host/images/2023/03/20/pngtree-exquisite-handbags-promotion-season-simple-yellow-banner-picture-image_1023006.png);
+  background-image: url(https://tinypic.host/images/2023/03/28/pngtree-exquisite-handbags-promotion-season-simple-yellow-banner-picture-image_1023006.png);
   background-size: cover;
   background-position: 69%;
   border-radius: 100px;
   margin-top: 5px;
+  position: fixed;
 }
 
 .banner-text {
@@ -273,6 +381,7 @@ body {
   cursor: pointer;
 }
 
+/** Lista de productos en promocion **/
 /*** Fondo pagina contacto ***/
 .fondoContacto {
   background-color: lightgray;
