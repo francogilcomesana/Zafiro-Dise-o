@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -19,8 +20,8 @@
   object-fit: cover;
 }
 
-.contenedorcards {
-  color: black;
+.contenedorcardss {
+  color: rgb(27, 24, 24);
   background-color: rgb(212, 212, 212);
   padding: 20px;
   display: grid;
@@ -69,6 +70,169 @@
   background-repeat: no-repeat;
 }
 .card3 p {
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+}
+
+.cartas {
+  padding: 10px;
+  margin-top: 20px;
+}
+.cartas .card-img-top {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+/** Cards Promociones **/
+.contenedorcards {
+  color: black;
+  background-color: rgb(212, 212, 212);
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "card4 card5 card6" "card7  card8 card9" "card10  card11 card12";
+}
+
+.card4 {
+  grid-area: card4;
+  background-image: url(https://tinypic.host/images/2023/03/30/mochila1.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card5 {
+  grid-area: card5;
+  background-image: url(https://tinypic.host/images/2023/03/30/mochila2.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card6 {
+  grid-area: card6;
+  background-image: url(https://tinypic.host/images/2023/03/30/mochila3.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card6 p {
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+}
+
+.card7 {
+  grid-area: card7;
+  background-image: url(https://tinypic.host/images/2023/03/30/bolso1.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card8 {
+  grid-area: card8;
+  background-image: url(https://tinypic.host/images/2023/03/30/bolso2.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card9 {
+  grid-area: card9;
+  background-image: url(https://tinypic.host/images/2023/03/30/bolso3.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card9 p {
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+}
+
+.card10 {
+  grid-area: card10;
+  background-image: url(https://tinypic.host/images/2023/03/30/neceser1.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card11 {
+  grid-area: card11;
+  background-image: url(https://tinypic.host/images/2023/03/30/neceser2.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(238, 238, 238);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card12 {
+  grid-area: card12;
+  background-image: url(https://tinypic.host/images/2023/03/30/neceser3.jpg);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+  border-radius: 50px;
+  margin: 10px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card12 p {
   padding: 5px;
   font-weight: bold;
   color: rgb(238, 238, 238);
@@ -147,9 +311,12 @@
     grid-gap: 30px;
     padding: 35px 0px;
   }
-  .contenedorcards {
+  .contenedorcardss {
     grid-template-areas: "card1 card1" "card2 card2" "card3 card3";
     padding: 20px;
+  }
+  .contenedorcards {
+    grid-template-areas: "card4 card4" "card5  card5" "card6  card6" "card7  card7" "card8  card8" "card9  card9" "card10 card10" "card11 card11" "card12 card12";
   }
 }
 /** Otros estilos **/
@@ -188,7 +355,7 @@ body {
 }
 
 .titulo {
-  font-family: "Urbanist" sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: transparent;
   font-size: 40px;
   font-weight: 600;
@@ -243,39 +410,34 @@ body {
 .cardproduct {
   width: 100%;
   margin: 20px;
-  border-radius: 6px;
+  border-radius: 30px;
   overflow: hidden;
-  background: #fff;
+  background: rgb(225, 218, 218);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease;
 }
-
 .cardproduct:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
-
 .cardproduct img {
   width: 100%;
   height: 210px;
 }
-
 .cardproduct .contenido {
   line-height: 1.5;
   color: #6a6a6a;
   justify-content: center;
 }
-
 .cardproduct .contenido h3 {
   font-weight: 400;
   margin-bottom: 15px;
 }
-
 .cardproduct .contenido a {
   text-decoration: none;
   display: inline-block;
-  justify-content: center;
+  align-items: center;
   padding: 10px;
   margin-top: 10px;
   color: rgb(72, 72, 174);
@@ -283,8 +445,7 @@ body {
   border-radius: 4px;
   transition: all 400ms ease;
 }
-
-.cardproduct .contenido a:hover {
+.cardproduct:hover {
   background-color: wheat;
   color: #fff;
 }
@@ -303,13 +464,20 @@ body {
   background-repeat: no-repeat;
 }
 
-.grid-item wide {
-  background-image: url(https://tinypic.host/images/2023/03/28/115a2c23350690abd.jpg);
+.grid-item {
+  background-image: url(https://tinypic.host/images/2023/03/28/6.jpg);
 }
-
 .grid-item:hover {
   filter: opacity(0.9);
   transform: scale(1.04);
+}
+
+.grid-item.wide {
+  background-image: url(https://tinypic.host/images/2023/03/28/115a2c23350690abd.jpg);
+}
+
+.grid-item.tall {
+  background-image: url(https://tinypic.host/images/2023/03/28/10.jpg);
 }
 
 .grid-container {
@@ -332,37 +500,38 @@ body {
 /** ESTILOS PAGINA PROMOCIONES **/
 .containerpromo {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
 }
 
 .container h2 {
   align-items: center;
-  color: black;
+  color: rgb(27, 24, 24);
   border: 2px solid black;
 }
 
 .banner {
   width: 100%;
   height: 65vh;
+}
+
+.banner {
   background-image: url(https://tinypic.host/images/2023/03/28/pngtree-exquisite-handbags-promotion-season-simple-yellow-banner-picture-image_1023006.png);
   background-size: cover;
   background-position: 69%;
   border-radius: 100px;
   margin-top: 5px;
-  position: fixed;
+  position: relative;
 }
 
 .banner-text {
   padding-top: 100px;
   margin-left: 50px;
 }
-
 .banner-text h2 {
   letter-spacing: 10px;
   font-weight: bold;
   font-size: 25px;
 }
-
 .banner-text h1 {
   margin-left: 5px;
   font-size: 100px;
@@ -371,8 +540,11 @@ body {
 #btn {
   width: 139px;
   height: 65px;
+}
+
+#btn {
   font-weight: bold;
-  background-color: black;
+  background-color: rgb(27, 24, 24);
   letter-spacing: 3px;
   margin-left: 50px;
   color: wheat;
@@ -384,7 +556,29 @@ body {
 /** Lista de productos en promocion **/
 /*** Fondo pagina contacto ***/
 .fondoContacto {
-  background-color: lightgray;
+  background-color: rgb(113, 112, 112);
+}
+
+#bienvenidaRiñoneras {
+  color: white;
+  padding: 300px 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.853)), url(https://tinypic.host/images/2023/03/30/rinorino.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  margin-top: -80px;
+}
+#bienvenidaRiñoneras h1 {
+  text-align: center;
+  font-size: 60px;
+}
+#bienvenidaRiñoneras h2 {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 25px;
+  text-align: center;
+  max-width: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */

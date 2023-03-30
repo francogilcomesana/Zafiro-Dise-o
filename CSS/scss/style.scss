@@ -1,9 +1,13 @@
-
+$color-principal: rgb(113, 112, 112);
+$color-secundario: rgb(27, 24, 24);
+$color-terciario: wheat;
+$fuentePrincipal: 'Urbanist', sans-serif;
 @import "./components/card";
 @import "./layout/layout";
 @import "pages/carteras";
 @import "./pages/promociones";
 @import "./pages/contacto";
+@import "./pages/riñoneras";
 
 
 

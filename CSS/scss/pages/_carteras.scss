@@ -1,73 +1,77 @@
 /*** ESTILOS PAGINA CARTERAS ***/
-#bienvenidaCarteras{
+#bienvenidaCarteras {
   color: white;
   padding: 300px 0;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.846),rgba(0, 0, 0, 0.853)),url(https://tinypic.host/images/2023/03/29/Cartera-Tote_04.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.853)), url(https://tinypic.host/images/2023/03/29/Cartera-Tote_04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%;
   margin-top: -80px;
-  h1{
+
+  h1 {
     text-align: center;
     font-size: 60px;
-    
+
   }
-  h2{
-      padding-left: 10%;
-      padding-right: 10%;
-      font-size: 25px;
-      text-align: center;
-      max-width: 70%;
+
+  h2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 25px;
+    text-align: center;
+    max-width: 70%;
   }
 }
-.tarjetas{
+
+.tarjetas {
   width: 100%;
   display: flex;
   max-width: 1100px;
 }
-.cardproduct{
+
+.cardproduct {
   width: 100%;
   margin: 20px;
-  border-radius: 6px;
+  border-radius: 30px;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-  cursor: default; 
+  background: rgb(225, 218, 218);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
   transition: all 400ms ease;
-}
-.cardproduct:hover{
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-  transform: translateY(-3%);
-}
-.cardproduct img{
-  width: 100%;
-  height: 210px;
-}
-.cardproduct .contenido{
-  line-height: 1.5;
-  color: #6a6a6a;
-  justify-content: center;
-}
-.cardproduct .contenido h3{
-  font-weight: 400;
-  margin-bottom: 15px;
+  &:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  img {
+    width: 100%;
+    height: 210px;
+  }
+  .contenido {
+    line-height: 1.5;
+    color: #6a6a6a;
+    justify-content: center;
+  }
+  .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
   
-}
-.cardproduct .contenido a{
-  text-decoration: none;
-  display: inline-block;
-  justify-content: center;
-  padding: 10px;
-  margin-top: 10px;
-  color: rgb(72, 72, 174);
-  border: 1px solid rgb(72, 72, 174);
-  border-radius: 4px;
-  transition: all 400ms ease;
-}
-.cardproduct .contenido a:hover{
-  background-color: wheat;
-  color: #fff;
+  }
+  .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(72, 72, 174);
+    border: 1px solid rgb(72, 72, 174);
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+  &:hover {
+    background-color: wheat;
+    color: #fff;
+  }
 }
 /*** Pagina Productos ***/
 .grid-item {
@@ -82,13 +86,21 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.grid-item wide{
+
+.grid-item {
+  background-image: url(https://tinypic.host/images/2023/03/28/6.jpg);
+  &:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+  }
+}
+.grid-item.wide {
   background-image: url(https://tinypic.host/images/2023/03/28/115a2c23350690abd.jpg);
 }
-.grid-item:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04);
+.grid-item.tall {
+  background-image: url(https://tinypic.host/images/2023/03/28/10.jpg);
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -98,13 +110,13 @@
   grid-auto-flow: dense;
 }
 
-  
-  @media (min-width: 600px) {
-    .wide {
-      grid-column: span 2;
-    }
-  
-    .tall {
-      grid-row: span 2;
-    }
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
   }
+
+  .tall {
+    grid-row: span 2;
+  }
+}

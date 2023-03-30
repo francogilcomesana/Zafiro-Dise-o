@@ -20,8 +20,8 @@
     }
 }
 
-.contenedorcards {
-    color: black;
+.contenedorcardss {
+    color: $color-secundario;
     background-color: rgb(212, 212, 212);
     padding: 20px;
     display: grid;
@@ -63,6 +63,177 @@
 .card3 {
     grid-area: card3;
     background-image: url(https://tinypic.host/images/2023/03/29/modelo4.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    p {
+        padding: 5px;
+        font-weight: bold;
+        color: rgb(238, 238, 238);
+    }
+}
+.cartas{
+    padding: 10px;
+    margin-top: 20px;
+    .card-img-top{
+        width: 200px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        
+    }
+}
+/** Cards Promociones **/
+.contenedorcards {
+    color: black;
+    background-color: rgb(212, 212, 212);
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "card4 card5 card6"
+                        "card7  card8 card9"
+                        "card10  card11 card12"
+}
+
+.card4 {
+    grid-area: card4;
+    background-image: url(https://tinypic.host/images/2023/03/30/mochila1.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card5 {
+    grid-area: card5;
+    background-image: url(https://tinypic.host/images/2023/03/30/mochila2.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card6 {
+    grid-area: card6;
+    background-image: url(https://tinypic.host/images/2023/03/30/mochila3.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    p {
+        padding: 5px;
+        font-weight: bold;
+        color: rgb(238, 238, 238);
+    }
+}
+.card7 {
+    grid-area: card7;
+    background-image: url(https://tinypic.host/images/2023/03/30/bolso1.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card8 {
+    grid-area: card8;
+    background-image: url(https://tinypic.host/images/2023/03/30/bolso2.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card9 {
+    grid-area: card9;
+    background-image: url(https://tinypic.host/images/2023/03/30/bolso3.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    p {
+        padding: 5px;
+        font-weight: bold;
+        color: rgb(238, 238, 238);
+    }
+}
+.card10 {
+    grid-area: card10;
+    background-image: url(https://tinypic.host/images/2023/03/30/neceser1.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card11 {
+    grid-area: card11;
+    background-image: url(https://tinypic.host/images/2023/03/30/neceser2.jpg);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
+    border-radius: 50px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card12 {
+    grid-area: card12;
+    background-image: url(https://tinypic.host/images/2023/03/30/neceser3.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
