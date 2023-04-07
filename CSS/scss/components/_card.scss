@@ -2,12 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 10vh;
+    column-gap: 5vh;
 }
 
 .card {
     display: flex;
     border: 1px solid black;
-    width: 400px;
     height: auto;
     flex-direction: column;
     justify-content: center;
@@ -26,11 +27,12 @@
     padding: 20px;
     display: grid;
     grid-template-areas: "card1 card2 card3";
+    
 }
 
 .card1 {
     grid-area: card1;
-    background-image: url(https://tinypic.host/images/2023/03/29/modelo1.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/modelo1.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -41,12 +43,18 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 400ms ease;
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+      }
 
 }
 
 .card2 {
     grid-area: card2;
-    background-image: url(https://tinypic.host/images/2023/03/29/modelo5.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/modelo3.jpg
+    );
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -57,12 +65,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 400ms ease;
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+      }
 
 }
 
 .card3 {
     grid-area: card3;
-    background-image: url(https://tinypic.host/images/2023/03/29/modelo4.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/modelo4.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -70,6 +83,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 400ms ease;
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+      }
 
     p {
         padding: 5px;
@@ -80,14 +98,30 @@
 .cartas{
     padding: 10px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5vh;
+    column-gap: 5vh;
     .card-img-top{
-        width: 200px;
-        height: 200px;
+        width: 90%;
+        height: 70%;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         object-fit: cover;
-        
+        padding-top: 10px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    }
+    .card-title{
+        margin-left: 70px;
+    }
+    .card-text{
+        margin-left: 30px;
+    }
+    .card .buy{
+        margin-left: 100px;
+        margin-top: 20px;
     }
 }
 /** Cards Promociones **/
@@ -96,14 +130,19 @@
     background-color: rgb(212, 212, 212);
     padding: 20px;
     display: grid;
+    max-width: 1600px;
+    margin: 0 auto;
     grid-template-areas: "card4 card5 card6"
                         "card7  card8 card9"
-                        "card10  card11 card12"
+                        "card10  card11 card12";  
+                    
 }
+
 
 .card4 {
     grid-area: card4;
-    background-image: url(https://tinypic.host/images/2023/03/30/mochila1.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/mochila1.jpg
+    );
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -119,7 +158,7 @@
 
 .card5 {
     grid-area: card5;
-    background-image: url(https://tinypic.host/images/2023/03/30/mochila2.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/mochila2.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -135,7 +174,7 @@
 
 .card6 {
     grid-area: card6;
-    background-image: url(https://tinypic.host/images/2023/03/30/mochila3.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/mochila3.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -152,7 +191,7 @@
 }
 .card7 {
     grid-area: card7;
-    background-image: url(https://tinypic.host/images/2023/03/30/bolso1.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/bolso1.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -168,7 +207,7 @@
 
 .card8 {
     grid-area: card8;
-    background-image: url(https://tinypic.host/images/2023/03/30/bolso2.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/bolso2.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -184,7 +223,7 @@
 
 .card9 {
     grid-area: card9;
-    background-image: url(https://tinypic.host/images/2023/03/30/bolso3.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/bolso3.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -201,7 +240,7 @@
 }
 .card10 {
     grid-area: card10;
-    background-image: url(https://tinypic.host/images/2023/03/30/neceser1.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/neceser1.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -217,7 +256,7 @@
 
 .card11 {
     grid-area: card11;
-    background-image: url(https://tinypic.host/images/2023/03/30/neceser2.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/neceser2.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
@@ -233,7 +272,7 @@
 
 .card12 {
     grid-area: card12;
-    background-image: url(https://tinypic.host/images/2023/03/30/neceser3.jpg);
+    background-image: url(https://tinypic.host/images/2023/04/06/neceser3.jpg);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.846);
     border-radius: 50px;
     margin: 10px;
